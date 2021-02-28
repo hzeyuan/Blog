@@ -29,6 +29,6 @@ react 组件基础
 * componentWillMount 在 React 中已被标记弃用，由于新的异步渲染机制会导致它被多次调用。
 * componentWillReceiveProps:标记废除，被getDerivedStateFromProps取代。
 * shouldComponentUpdate:通过return true or false,可以用于性能优化。
-* componentWillUpdate：标记废弃，同样由于新的异步渲染机制。
+* componentWillUpdate：标记废弃，同样由于新的异步渲染机制,可以使用getSnapshotBeforeUpdate 与 componentDidUpdate代替。
 * componentWillUnmount:忘记解除某些事件绑定或者清理操作。
 * 没有使用componentDidCatch等错误边界处理：导致界面白屏。
