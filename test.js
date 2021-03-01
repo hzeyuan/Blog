@@ -1,24 +1,20 @@
-function myNew(ctor, ...args) {
-    if(typeof ctor !== 'function') {
-      throw 'ctor must be a function';
-    }
-    let obj = {};
-    obj.__proto__ = Object.create(ctor.prototype);
-    let res = ctor.apply(obj,  [...args]);
-
-    let isObject = typeof res === 'object' && typeof res !== null;
-    let isFunction = typeof res === 'function';
-    return isObject || isFunction ? res : obj;
+Function.prototype.bind_ = function (obj) {
+    //第0位是this，所以得从第一位开始裁剪
+    console.log('arguments',arguments);
+    let [_,...args] = [...arguments]
+    var fn = this;
+    return function () {
+        fn.apply(obj, args);
+    };
 };
 
-function test(){
-    this.name = '1'
-    return {sex:'1'}
-}
+var obj = {
+    z: 1
+};
 
-const a = myNew(test)
-console.log(a)
-console.log(a.sex)
-console.log(a.name)
+function fn() {
+    console.log(this.z);
+};
 
-
+var bound = fn.bind_(obj);
+bound(); 

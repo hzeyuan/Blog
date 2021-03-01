@@ -166,4 +166,50 @@ console.log(a.sex)
 console.log(a.name)
 ```
 
+> call,apply方法
+```
+Function.prototype.call = function(ctx,...args){
+    var context = ctx || window
+    context.fn = this
+    var result = context.fn(...args)
+    delete context
+    return result
+}
+Function.prototype.apply = function(ctx,...args){
+    var context = ctx || window
+    context.fn = this
+    var result = context.fn(...args)
+    delete context
+    return result
+}
+```
+
 > bind方法
+* 满足函数柯里化。
+* 和apply和call不同的是，返回的是一个函数。
+```
+Function.prototype.bind_ = function (obj) {
+    // 1. bind只能被函数调用，非函数报错。
+    if (typeof this !== "function") {
+        throw new Error("Function.prototype.bind - what is trying to be bound is not callable");
+    };
+    // 第0位是this，所以得从第一位开始裁剪
+    let [_,...args] = [...arguments]
+    var fn = this;
+    // 满足返回的是函数
+    return function () {
+        // 3. this.constructor === fn判断是否为new调用,满足柯里化
+        fn.apply(this.constructor === fn? this:obj, args.concat([...arguments]));
+    };
+};
+```
+
+----
+### 6. 什么是闭包？
+----
+
+
+----
+### 7. 什么是函数柯里化？
+----
+
