@@ -1,7 +1,7 @@
 
 ----
-### <a id="html_1">1.html5有哪些新特性？</a>
------
+### 1.html5有哪些新特性？
+-----<a id="p1">1、11111111111111</a>
 
 1. 语义化标签:header、footer、section、nav、aside、article
 2. 增强型form：
@@ -18,7 +18,7 @@
 11. WebSockets
 
 ----
-### <a id="html_2">2.localStorage，sessionStorage，cookie 的区别？</a>
+### 2.localStorage，sessionStorage，cookie 的区别？
 ----
 
 > 共同点
@@ -41,8 +41,11 @@
 
 
 ----
-### <a id="html_3">3.DOCTYPE的作用？ </a>
+### 3.DOCTYPE的作用
 ----
 
 > DOCTYPE用来声明文档的类型为html,例如```<!DOCTYPE html>```浏览器会判断为html5类型，随之选择合适的协议来解析。
 
+----
+### 3.DOCTYPE的作用
+----
