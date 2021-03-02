@@ -22,8 +22,8 @@
 ### React篇
 * [1. 什么是react?](https://github.com/hzeyuan/Blog/blob/master/React/react_basic_1.md#1-什么是react)
 * [2. 为什么要用JSX?](https://github.com/hzeyuan/Blog/blob/master/React/react_basic_1.md#2-为什么要用JSX)
-* [React中的生命周期及注意的坑?](https://github.com/hzeyuan/Blog/blob/master/React/react_basic_2.md#3-React中的生命周期及注意的坑)
-* [1. 类组件和函数组件的区别?](https://github.com/hzeyuan/Blog/blob/master/React/react_basic_3.md#1-类组件和函数组件的区别)
-* [2. 如何设计React组件?](https://github.com/hzeyuan/Blog/blob/master/React/react_basic_4.md#2-如何设计React组件)
-* [3. setState是同步更新还是异步更新?](https://github.com/hzeyuan/Blog/blob/master/React/react_state_1.md#1-setState是同步更新还是异步更新)
-* [4. 常用React Hooks方法?]()
+* [3. React中的生命周期及注意的坑?](https://github.com/hzeyuan/Blog/blob/master/React/react_basic_2.md#3-React中的生命周期及注意的坑)
+* [4. 类组件和函数组件的区别?](https://github.com/hzeyuan/Blog/blob/master/React/react_basic_3.md#1-类组件和函数组件的区别)
+* [5. 如何设计React组件?](https://github.com/hzeyuan/Blog/blob/master/React/react_basic_4.md#2-如何设计React组件)
+* [6. setState是同步更新还是异步更新?](https://github.com/hzeyuan/Blog/blob/master/React/react_state_1.md#1-setState是同步更新还是异步更新)
+* [7. 常用React Hooks方法?]()
