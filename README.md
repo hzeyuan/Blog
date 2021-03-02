@@ -1,7 +1,7 @@
 ### html篇
 * [1.html5新特性？](https://github.com/hzeyuan/Blog/blob/master/HTML5/html_1.md/#1html5新特性)
 * [2.localStorage，sessionStorage，cookie 的区别？](https://github.com/hzeyuan/Blog/blob/master/HTML5/html_1.md#2localstoragesessionstoragecookie-%E7%9A%84%E5%8C%BA%E5%88%AB)
-* [3.DOCTYPE的作用？](https://github.com/hzeyuan/Blog/blob/master/HTML5/html_1.md#3doctype%E7%9A%84%E4%BD%9C%E7%94%A8-)
+* [3.DOCTYPE的作用？](https://github.com/hzeyuan/Blog/blob/master/HTML5/html_1.md#3doctype%E7%9A%84%E4%BD%9C%E7%94%A8)
 
 
 ### js篇
