@@ -137,7 +137,7 @@ Child.prototype.constuctor = Child;
 
 
 ----
-### 5. 如何实现new apply call, bind方法？
+### 5. 如何实现new、apply、call、bind方法？
 ----
 
 > new方法：执行后返回一个对象，要么是实例对象，要么是return 返回的对象
@@ -207,9 +207,48 @@ Function.prototype.bind_ = function (obj) {
 ----
 ### 6. 什么是闭包？
 ----
+* 简单点说：闭包就是嵌套函数
+* 说清楚点，闭包就是可以访问另一个函数作用域中的变量的函数。
+
+----
+### 8. 闭包产生的原因？
+----
+* 不知道作用域？ --->[什么是作用域？](如何实现new、apply、call、bind方法？)
+* 了解原因之前，得先知道什么是作用域链(当前作用域找不到变量时，就会往父级作用域链查找，这样一级一级的就形成了**作用域链**)
+* 作用域[]()
+
+----
+### 9. 什么是函数柯里化？
+----
+* 把需要接受**多个参数**的函数,转换为**传递单一参数**的函数
+
+```
+var curry = function(fn,args){
+    var length = fn.length
+    args = args || []
+    // 提取第一个参数
+    
+    // var [firstArg ,...args] = args
+    return function(){
+        let firstArg = args.slice(0)
+        //  把第一个参数，下一个函数的参数拼接起来
+        var newArgs =  firstArg.concat([...arguments])
+        // 参数的长度<参数总长度，使用call来满足柯里化
+        if(newArgs.length < length){
+            return curry.call(this,fn,newArgs)
+        }else{
+            // 参数的长度>=参数总长度,直接调用
+            return fn.apply(this,newArgs)
+        }
+        
+    } 
+}
+```
 
 
 ----
-### 7. 什么是函数柯里化？
+### 8. 什么是作用域？
 ----
+
+* 变量能够被访问的范围区域(这里面包含有什么变量呀，函数呀等信息)
 
