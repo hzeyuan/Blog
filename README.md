@@ -42,20 +42,20 @@
 
 ### 网络篇
 
-* [1. 有哪些HTTP方法？]()
-* [2. POST和GET的区别？]()
-* [3. HTTP状态码有哪些，分别代表什么？]()
-* [4. 说说你对TCP三次握手和四次挥手的理解？]()
-* [5. 为什么连接的时候是三次握手，关闭的时候却是四次挥手？]()
-* [6. 什么是HTTPS和hTTP的区别？]()
-* [7. 说说HTTP的发展过程和特点？]()
-* [8. 什么是同源策略，跨域？]()
-* [9. 常见的跨域解决办法有哪些？]()14. 什么是CDN?
-* [10. 从浏览器输入URL到加载出页面发生了什么?]()
-* [11. TCP和UDP的区别？]()
-* [12. ajax的工作原理？]()
-* [13. 什么是XSS攻击/sql注入，csrf攻击以及如何防范？]()
-* [14. 什么是CDN?]()
+* [1. 有哪些HTTP方法？](https://github.com/hzeyuan/Blog/blob/master/web/network.md#1-有哪些http方法)
+* [2. POST和GET的区别？](https://github.com/hzeyuan/Blog/blob/master/web/network.md#2-POST和GET的区别)
+* [3. HTTP状态码有哪些，分别代表什么？](https://github.com/hzeyuan/Blog/blob/master/web/network.md#3-http状态码有哪些分别代表什么)
+* [4. 说说你对TCP三次握手和四次挥手的理解？](https://github.com/hzeyuan/Blog/blob/master/web/network.md#4-说说你对TCP三次握手和四次挥手的理解)
+* [5. 为什么连接的时候是三次握手，关闭的时候却是四次挥手？](https://github.com/hzeyuan/Blog/blob/master/web/network.md#5-为什么连接的时候是三次握手关闭的时候却是四次挥手)
+* [6. 什么是HTTPS和hTTP的区别？](https://github.com/hzeyuan/Blog/blob/master/web/network.md#6-什么是HTTPS和hTTP的区别)
+* [7. 说说HTTP的发展过程和特点？](https://github.com/hzeyuan/Blog/blob/master/web/network.md#7-说说HTTP的发展过程和特点)
+* [8. 什么是同源策略，跨域？](https://github.com/hzeyuan/Blog/blob/master/web/network.md#8-什么是同源策略跨域)
+* [9. 常见的跨域解决办法有哪些？](https://github.com/hzeyuan/Blog/blob/master/web/network.md#9-常见的跨域解决办法有哪些)
+* [10. 从浏览器输入URL到加载出页面发生了什么?](https://github.com/hzeyuan/Blog/blob/master/web/network.md#10-从浏览器输入URL到加载出页面发生了什么)
+* [11. TCP和UDP的区别？](https://github.com/hzeyuan/Blog/blob/master/web/network.md#11-TCP和UDP的区别)
+* [12. ajax的工作原理？](https://github.com/hzeyuan/Blog/blob/master/web/network.md#12-ajax的工作原理)
+* [13. 什么是XSS攻击/sql注入，csrf攻击以及如何防范？](https://github.com/hzeyuan/Blog/blob/master/web/network.md#13-什么是xss攻击sql注入csrf攻击以及如何防范)
+* [14. 什么是CDN?](https://github.com/hzeyuan/Blog/blob/master/web/network.md#14-什么是cdn)
 
 
 ### 浏览器及性能优化篇
