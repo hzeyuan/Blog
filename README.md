@@ -1,4 +1,7 @@
 
+
+# 前端面试知识点的总结，希望可以帮助到一些即将准备面试的同学！！
+
 ### html篇
 * [1.html5新特性？](https://github.com/hzeyuan/Blog/blob/master/HTML5/html_1.md/#1html5新特性)
 * [2.localStorage，sessionStorage，cookie 的区别？](https://github.com/hzeyuan/Blog/blob/master/HTML5/html_1.md#2localstoragesessionstoragecookie-%E7%9A%84%E5%8C%BA%E5%88%AB)
