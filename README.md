@@ -26,4 +26,14 @@
 * [4. 类组件和函数组件的区别?](https://github.com/hzeyuan/Blog/blob/master/React/react_basic_3.md#1-类组件和函数组件的区别)
 * [5. 如何设计React组件?](https://github.com/hzeyuan/Blog/blob/master/React/react_basic_4.md#2-如何设计React组件)
 * [6. setState是同步更新还是异步更新?](https://github.com/hzeyuan/Blog/blob/master/React/react_state_1.md#1-setState是同步更新还是异步更新)
-* [7. 常用React Hooks方法?]()
+* [7. 为什么setState要异步呢?](https://github.com/hzeyuan/Blog/blob/master/React/react_state_1.md#7-为什么setState要异步呢)
+* [8. React中的跨组件通信?](https://github.com/hzeyuan/Blog/blob/master/React/react_state_1.md#8-React中的跨组件通信)
+* [9. 列举一种熟悉的React状态管理工具](https://github.com/hzeyuan/Blog/blob/master/React/react_state_1.md#9-列举一种熟悉的React状态管理工具)
+
+#### 渲染
+* [1. 虚拟DOM是什么?](https://github.com/hzeyuan/Blog/blob/master/React/react_render_1.md#1-虚拟DOM是什么)
+
+#### React Hooks
+* [1. 常用React Hooks方法?](https://github.com/hzeyuan/Blog/blob/master/React/react_hooks_1.md#1-常用React%20Hooks方法)
+* [2. React Hooks有哪些限制?](https://github.com/hzeyuan/Blog/blob/master/React/react_hooks_1.md#2-React%20Hooks有哪些限制)
+* [3. 简单说说React Hooks的设计模式?](https://github.com/hzeyuan/Blog/blob/master/React/react_hooks_1.md#3-简单说说React%20Hooks的设计模式)
