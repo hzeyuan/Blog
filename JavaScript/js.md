@@ -353,12 +353,24 @@ Array.every
 
 
 ### 14. 你了解 Object.create吗?
+* Object.create可以对对象进行浅拷贝。
+* Object.create(null)继承null原型，返回一个干净的{}。
 
 ### 15. 关于setInterval与setTimeout作用域问题?
 
+* setInterval和setTimeout作用是全局的。
+* 解决办法是使用闭包，或者用bind绑定。 
+
 ### 16. 请问 new 执行的操作?
+* 创建一个新对象
+* 绑定就对象的prototype
+* 执行函数
+* 函数中有return则返回return 对象，没有则返回执行后的结果
 
 ### 17. 说说JavaScript 函数式编程?
+* 函数时第一等公民
+* 纯函数，有着确定的输入和输出
+* 两大特定：组合和柯里化。
 
 ### 18. es6有哪儿些新特性?
 * const let 防止变量提升
