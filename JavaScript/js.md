@@ -226,9 +226,6 @@ Function.prototype.bind_ = function (obj) {
 var curry = function(fn,args){
     var length = fn.length
     args = args || []
-    // 提取第一个参数
-    
-    // var [firstArg ,...args] = args
     return function(){
         let firstArg = args.slice(0)
         //  把第一个参数，下一个函数的参数拼接起来
@@ -252,3 +249,127 @@ var curry = function(fn,args){
 
 * 变量能够被访问的范围区域(这里面包含有什么变量呀，函数呀等信息)
 
+
+
+----
+### 9. 数组扁平化
+----
+
+1. 调用flat方法 var newArray = arr.flat([depth])
+2. 递归实现
+```
+function flat (arr){
+  let result =  []
+  for(let i=0;i<arr.length;i++){
+    if(Array.isArray(arr[i])){
+      result = result.concat(flat(arr[i]))
+    }
+    else{
+      result.push(arr[i])
+    }
+  }
+  return result
+}
+```
+3. 对于数字可以使用split,和toString处理
+```
+var a = [1,2,[3,4]]
+a.toString().split(',') 
+````
+4. 扩展运算符
+```
+var arr = [1,2,[3,4,5],[6,7]]
+function flat(){
+    while(arr.some(a=>Array.isArray(a))){
+        arr = [].concat(...arr)
+    }
+    return arr;
+}
+```
+
+
+----
+### 10. 数组的遍历方式有哪些？
+----
+* for循环遍历
+* for ... in ...
+* for ... of ...
+* forEach遍历
+* map遍历
+* reduce遍历
+
+
+----
+### 11 数组去重？
+----
+
+* 使用set来进行去重 
+```
+array.from(new Set([1,2,1])) // [1,2]
+```
+* 手写一个，利用indexof
+
+```
+function unique(arr){
+  var res = []
+  for(let i=0;i<arr.length;i++){
+    if(res.indexOf(arr[i])===-1){
+      res.push(arr[i])
+    }
+  }
+  return res
+}
+```
+
+
+----
+### 12. 数组常用方法合集？
+----
+
+转化
+* Array.of
+* Array.from
+切割
+* Array.slice
+* Array.splice
+连接
+* Array.join
+* Array.concat
+查找
+* Array.indexof
+* Array.keys
+* Array.values
+* Array.entries
+判断
+Array.isArray
+Array.some
+Array.filter
+Array.every
+
+### 13. for ...of.. 和for ...in...区别
+
+* for in 返回的是key,同时会遍历原型上的所有可枚举属性
+* for of 返回的是value,遍历的是实现了symbol.iter可迭代对象,像map,set,Array
+
+
+### 14. 你了解 Object.create吗?
+
+### 15. 关于setInterval与setTimeout作用域问题?
+
+### 16. 请问 new 执行的操作?
+
+### 17. 说说JavaScript 函数式编程?
+
+### 18. es6有哪儿些新特性?
+* const let 防止变量提升
+* 块级作用域
+* 箭头函数，解决this指向问题
+* 数组扩展方法，from of 
+* 扩展运算符，symbol等
+* async/await 语法糖
+
+### 19. var,let 和const的区别?
+* 使用var声明的变量，其作用域为该语句所在的函数内，且存在变量提升现象；
+* 使用let声明的变量，其作用域为该语句所在的代码块内，不存在变量提升；
+* 使用const声明的是常量，在后面出现的代码中不能再修改该常量的值。
+### 20. 什么是变量提升？

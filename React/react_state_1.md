@@ -41,3 +41,18 @@ setState 是先存进 state 队列还是直接更新，如果值为 true 则执�
 ### 9. 列举一种熟悉的React状态管理工具
 ----
 
+* 传统的mvc:适用于小型项目，但当项目越来越大的时候，会因为model多多而难以维护。
+* Flux：采用单向数据流， 
+```
+              action<------------------
+                 |                     |
+                 v                     |
+action --> dispatcher --> store --> view
+```
+> Flux 包含了 4 个部分，分别是 Dispatcher、 Store、View、Action。Store 存储了视图层所有的数据，当 Store 变化后会引起 View 层的更新。如果在视图层触发一个 Action，就会使当前的页面数据值发生变化。Action 会被 Dispatcher 进行统一的收发处理，传递给 Store 层，Store 层已经注册过相关 Action 的处理逻辑，处理对应的内部状态变化后，触发 View 层更新。
+
+* Redux:是Flux更简洁的实现方式
+> 不同于flux的地方在于：
+* 单一数据源、纯函数 Reducer、State 是只读的
+* 没有了dispather,并且不再store处理对应状态变化逻辑，而是在store中通过调用dispath向特定的reducer传递action，reducer表现形式为:(preState,action) => newState，多个reducer会通过combineReducer方法合成一个跟reducer,这个跟reducer负责维护完整的state，在传递给view。
+

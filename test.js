@@ -1,14 +1,19 @@
-function t(N,arr,M){
-    let newArr = arr.slice(0,N)
-    let maxN = -Infinity
-    for(let i=0;i<newArr.length;i++){
-        let tmpArr = newArr.slice(i,i+M)
-        let  newMaxN = tmpArr.reduce((pre,cur)=> pre+cur)
-        if(newMaxN > maxN){
-            maxN = newMaxN
-        }
-    }
-    return maxN;
+var value = 1;
+
+var foo = {
+  value: 2,
+  bar: function () {
+    return this.value;
+  }
 }
 
-console.log(t(6,[10,20,30,15,23,12],3))
+//示例1
+console.log(foo.bar());
+//示例2
+console.log((foo.bar)());
+//示例3
+console.log((foo.bar = foo.bar)());
+//示例4
+console.log((false || foo.bar)());
+//示例5
+console.log((foo.bar, foo.bar)());
