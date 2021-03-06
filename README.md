@@ -33,21 +33,22 @@
 * [10. 数组的遍历方式有哪些？](https://github.com/hzeyuan/Blog/blob/master/JavaScript/js.md#9-数组的遍历)
 * [11. 数组去重](https://github.com/hzeyuan/Blog/blob/master/JavaScript/js.md#11-数组去重)
 * [12. 数组常用方法合集](https://github.com/hzeyuan/Blog/blob/master/JavaScript/js.md#11-数组常用方法合集)
-* [13. for ...of.. 和for ...in...区别](https://github.com/hzeyuan/Blog/blob/master/JavaScript/js.md#)
-* [14. 你了解 Object.create吗?]()
-* [15. 关于setInterval与setTimeout作用域问题?]()
-* [16. 请问 new 执行的操作?]()
-* [17. 说说JavaScript 函数式编程]()
-* [18. es6有哪儿些新特性?]()
-* [19. let 和const的区别?]()
-* [20. 什么是变量提升?]()
+* [13. for ...of.. 和for ...in...区别](https://github.com/hzeyuan/Blog/blob/master/JavaScript/js.md#13-for-of-和for-in区别)
+* [14. 你了解 Object.create吗?](https://github.com/hzeyuan/Blog/blob/master/JavaScript#14-你了解-objectcreate吗)
+* [15. 关于setInterval与setTimeout作用域问题?](https://github.com/hzeyuan/Blog/blob/master/JavaScript/js.md#15-关于setinterval与settimeout作用域问题)
+* [16. 请问 new 执行的操作?](https://github.com/hzeyuan/Blog/blob/master/JavaScript/js.md#16-请问-new-执行的操作)
+* [17. 说说JavaScript 函数式编程](https://github.com/hzeyuan/Blog/blob/master/JavaScript/js.md#17-说说javascript-函数式编程)
+* [18. es6有哪儿些新特性?](https://github.com/hzeyuan/Blog/blob/master/JavaScript/js.md#18-es6有哪儿些新特性)
+* [19. let 和const的区别?](https://github.com/hzeyuan/Blog/blob/master/JavaScript/js.md#19-varlet-和const的区别)
+* [20. 什么是变量提升?](https://github.com/hzeyuan/Blog/blob/master/JavaScript/js.md#20-什么是变量提升)
 
 
 ### 异步编程
 
 * [1. 什么是同步，异步?](https://github.com/hzeyuan/Blog/blob/master/JavaScript/js_1.md#1-什么是同步异步)
 * [2. javascript异步发展历程?](https://github.com/hzeyuan/Blog/blob/master/JavaScript/js_1.md#2-javascript异步发展历程)
-4. promise all，race的实现
+* [3. promise all，race的实现?](https://github.com/hzeyuan/Blog/blob/master/JavaScript/js_1.md#)
+
 
 ### React篇
 * [1. 什么是react?](https://github.com/hzeyuan/Blog/blob/master/React/react_basic_1.md#1-什么是react)
@@ -90,10 +91,10 @@
 
 ### 浏览器及性能优化篇
 
-* [1. 说说浏览器的缓存机制？]()
-* [2. 说说浏览器的渲染机制？]()
-* [3. 常见的性能优化手段有哪些？]()
-* [4. 前端性能指标有哪些？]()
+* [1. 说说浏览器的缓存机制？](https://github.com/hzeyuan/Blog/blob/master/web/web.md#1-说说浏览器的缓存机制)
+* [2. 说说浏览器的渲染机制？](https://github.com/hzeyuan/Blog/blob/master/web/web.md#2-说说浏览器的渲染机制)
+* [3. 常见的性能优化手段有哪些？](https://github.com/hzeyuan/Blog/blob/master/web/web.md#3-常见的性能优化手段有哪些)
+* [4. 前端性能指标有哪些？](https://github.com/hzeyuan/Blog/blob/master/web/web.md#4-前端性能指标有哪些)
 
 
 ### Typescript
