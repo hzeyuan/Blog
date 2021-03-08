@@ -15,4 +15,30 @@
 * **async/await**, 语法糖，既可以让异步的逻辑表现的像同步一样，可以不用像Promise那样写很多个then。
 
 
-
+###  3. promise all，race的实现?
+* promise.all 等待异步操作全部执行完成，其中有一个未完成则报错。
+* promise.race，等待异步操作中谁最先完成，返回谁。
+```
+class Promise {
+  static all(proArr){
+    return new Promise((resolve,reject)=>{
+      let count = 0;
+      let res = []
+      let done = (i,data)=>{
+        res[i] = data
+        if(proArr.length === ++count){return resolve(res)}
+      }
+      proArr.forEach((pro,k)=>{
+        pro.then(data=>done(k,data),reject)
+      })
+    })
+  }
+  static race(proArr){
+    return new Promise((resolve,reject)=>{
+      proArr.forEach((pro,k)=>{
+      pro.then(resolve,reject);
+      })
+    })
+  }
+}
+```

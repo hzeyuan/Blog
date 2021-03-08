@@ -178,7 +178,7 @@ A->B    2001  3001
 ----
 
 * 1. JSONP
-利用<script>标签灭有跨域的特点来实现，然后通过callback的形式来获取数据。
+利用<script>标签没有跨域的特点来实现，然后通过callback的形式来获取数据。
 * 2. CORS
 服务端设置 Access-Control-Allow-Origin 就可以开启 CORS。 该属性表示哪些域名可以访问资源，如果设置通配符则表示所有网站都可以访问资源。
 
@@ -210,3 +210,30 @@ A->B    2001  3001
 ### 14. 什么是CDN?
 ----
 * CDN：内容分发网络，主要是对资源进行缓存，已达到减轻服务器压力，同时加快访问速度的作用。用户的访问的资源会在从最近的CDN节点开始查找，若为找到则返回，没找到则请求原网站。
+
+----
+### 15. 防抖节流的实现?
+----
+* 防抖： 一定时间内多次触发，只会以最后的触发事件为准。
+
+```
+function debounce(func,timeout){
+    let timer;
+    return funciton(){
+        clearTimeout(timer);
+        timer = setTimeout(func.bind(this),timeout)
+    }
+}
+```
+* 节流：控制发生的频率
+```
+function throttle(f,timeout){
+    let timer;
+    return function(...args){
+        if(timer)return;
+        timer = setTimout(()=>{
+         f(...args)   
+        },timeout)
+    }
+}
+```

@@ -41,8 +41,8 @@
 2. flex布局
 3. table
 4. 绝对定位，定宽定高
-5. transform绝对定位，定不定宽，不定高
-* 绝对定位，top,botton,left,right =0, margin:auto 9;定宽高
+5. transform绝对定位，不定宽，不定高
+* 绝对定位，top,botton,left,right =0, margin:auto 0;定宽高
 
 ### 8. css中隐藏元素的方法
 
