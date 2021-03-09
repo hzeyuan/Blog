@@ -62,3 +62,40 @@ to {top:200px;}
 }
 ```
 
+### 10. 实现两栏布局有什么方法?(左边宽度固定,右边自适应)
+
+* absolute 
+```
+.left{
+   width: 200px;
+    height: 400px;
+    background-color:red;
+    position: absolute;
+}
+.main{
+    height: 400px;
+    position: absolute;
+    left: 200px;
+    background-color:yellow;
+}
+
+```
+
+
+* flex:
+```
+body{
+	display: flex;
+}
+.left{
+    width: 200px;
+    height: 400px;
+    background-color:red;
+}
+/* 设置flex为1,占位等于父元素-其他子元素 */
+.main{
+    height: 400px;
+    background-color:yellow;
+    flex:1 
+} 
+```

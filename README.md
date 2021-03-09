@@ -11,7 +11,8 @@
 * [6. sass,less 预处理的优点？]()
 * [7. 如何实现垂直水平居中？]()
 * [8. css中隐藏元素的方法]()
-
+* [9. 使用css实现一个持续的动画效果]()
+* [10. 实现两栏布局有什么方法?(左边宽度固定,右边自适应) ]()
 
 
 ### html篇
@@ -60,6 +61,11 @@
 * [7. 为什么setState要异步呢?](https://github.com/hzeyuan/Blog/blob/master/React/react_state_1.md#7-为什么setState要异步呢)
 * [8. React中的跨组件通信?](https://github.com/hzeyuan/Blog/blob/master/React/react_state_1.md#8-React中的跨组件通信)
 * [9. 列举一种熟悉的React状态管理工具](https://github.com/hzeyuan/Blog/blob/master/React/react_state_1.md#9-列举一种熟悉的React状态管理工具)
+* [10. React中keys的作用是什么？](https://github.com/hzeyuan/Blog/blob/master/React/react_state_1.md#10-React中keys的作用是什么)
+* [11. redux 如何处理异步？]()
+* [12. 主流的异步中间件redux-thunk、redux-saga的优缺点和区别？]()
+* [13. 触发组件重新渲染的方法有哪些?]()
+* [14. setState的执行流程?]()
 
 
 #### 渲染

@@ -1,22 +1,30 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <style>
-            div{
-                width: 100px;
-                height: 100px;
-                /* position: relative; */
-                animation:mymove 5s infinite;
-            }
-            
-                @keyframes mymove {
-                from {top:0px;}
-                to {top:200px;}
-                }
-        </style>
-    </head>
-    <body>
-        <div></div>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="left"></div>
+<div class="main"></div>
+
+</body>
+<style>
+    body{
+	display: flex;
+}
+.left{
+    width: 200px;
+    height: vh;
+    background-color:red;
+}
+/* 设置flex为1,占位等于父元素-其他子元素 */
+.main{
+    height: 100vh;
+    background-color:yellow;
+    flex:1 
+} 
+</style>
 </html>
